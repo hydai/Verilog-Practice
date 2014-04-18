@@ -1,0 +1,29 @@
+
+NET "out[0]" LOC = U5;
+NET "out[1]" LOC = T7;
+NET "out[2]" LOC = R7;
+NET "out[3]" LOC = V7;
+NET "out[4]" LOC = V4;
+NET "out[5]" LOC = T4;
+NET "out[6]" LOC = T3;
+NET "out[7]" LOC = R5;
+NET "out[8]" LOC = N5;
+NET "out[9]" LOC = R3;
+NET "out[10]" LOC = U7;
+NET "out[11]" LOC = T5;
+NET "out[12]" LOC = V5;
+NET "out[13]" LOC = N4;
+NET "out[14]" LOC = P6;
+NET "out[15]" LOC = V8;
+NET "out[16]" LOC = U8;
+NET "out[17]" LOC = V6;
+NET "out[18]" LOC = T6;
+
+NET "clk" LOC = R10;
+NET "en" LOC = T1;
+NET "led" LOC = K4;
+NET "reset" LOC = M1;
+
+#Complete the three "en" "led" "reset" NETs
+
+

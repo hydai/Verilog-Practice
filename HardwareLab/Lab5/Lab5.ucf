@@ -1,0 +1,32 @@
+NET "clk" LOC = R10;
+
+NET "DIGIT[0]" LOC = T6;
+NET "DIGIT[1]" LOC = V6;
+NET "DIGIT[2]" LOC = U8;
+NET "DIGIT[3]" LOC = V8;
+NET "DISPLAY[0]" LOC = P6;
+NET "DISPLAY[1]" LOC = N4;
+NET "DISPLAY[2]" LOC = V5;
+NET "DISPLAY[3]" LOC = T5;
+NET "DISPLAY[4]" LOC = U7;
+NET "DISPLAY[5]" LOC = R3;
+NET "DISPLAY[6]" LOC = N5;
+NET "DISPLAY[7]" LOC = R5;
+
+/*Add related design port*/
+NET "max" LOC = K3;
+NET "min" LOC = K4;
+NET "speed" LOC = M1;
+NET "reset" LOC = P3;
+
+/*Add keyboard design port*/
+
+NET "row[3]" LOC = K2;
+NET "row[2]" LOC = K1;
+NET "row[1]" LOC = L4;
+NET "row[0]" LOC = L3;
+NET "column[3]" LOC = J3;
+NET "column[2]" LOC = J1;
+NET "column[1]" LOC = H2;
+NET "column[0]" LOC = H1;
+
