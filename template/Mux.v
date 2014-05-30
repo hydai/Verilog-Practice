@@ -1,5 +1,5 @@
-module Mux (
-    output out,
+module Mux4to1 (
+    output reg [1:0] out,
     input [1:0] sel,
     input [1:0] s0,
     input [1:0] s1,
@@ -11,8 +11,8 @@ parameter S1 = 2'b01;
 parameter S2 = 2'b10;
 parameter S3 = 2'b11;
 
-    always @(sel) begin
-        case(sel) begin
+    always @(*) begin
+        case(sel)
             S0: begin
                 out <= s0;
             end

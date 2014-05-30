@@ -19,7 +19,7 @@ always @(posedge clk or negedge reset_n) begin
 end
 
 always @(*) begin
-    case(state) begin
+    case(state) 
         S0: begin
             if (in == 0) begin
                 nextState <= S0;
