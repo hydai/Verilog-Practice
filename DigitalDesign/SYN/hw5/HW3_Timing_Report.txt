@@ -1,0 +1,134 @@
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : datapath
+Version: D-2010.03-SP5
+Date   : Mon Jun  2 01:41:40 2014
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: R_reg[4][12]
+              (rising edge-triggered flip-flop clocked by CLK_0)
+  Endpoint: R_reg[0][14]
+            (rising edge-triggered flip-flop clocked by CLK_0)
+  Path Group: CLK_0
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK_0 (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_reg[4][12]/CK (DFFRX1)                                0.00       0.00 r
+  R_reg[4][12]/Q (DFFRX1)                                 0.52       0.52 f
+  U927/Y (MXI4XL)                                         0.46       0.98 r
+  U1537/Y (MXI4X2)                                        0.27       1.25 f
+  U642/Y (MXI2X1)                                         0.22       1.48 r
+  U1316/Y (CLKINVX1)                                      0.22       1.69 f
+  srl_143/A[12] (datapath_DW_rightsh_1)                   0.00       1.69 f
+  srl_143/U186/Y (CLKMX2X2)                               0.21       1.90 f
+  srl_143/U185/Y (MXI2X1)                                 0.13       2.03 r
+  srl_143/U131/Y (MXI2XL)                                 0.14       2.17 f
+  srl_143/U142/Y (MXI2X1)                                 0.20       2.37 r
+  srl_143/U162/Y (NOR2X1)                                 0.08       2.45 f
+  srl_143/B[3] (datapath_DW_rightsh_1)                    0.00       2.45 f
+  U1031/Y (AOI21X1)                                       0.16       2.60 r
+  U821/Y (NAND4BBX2)                                      0.17       2.78 f
+  U1017/Y (CLKINVX1)                                      0.10       2.87 r
+  U633/Y (AND2X2)                                         0.14       3.02 r
+  add_1_root_add_220_2/B[3] (datapath_DW01_add_5)         0.00       3.02 r
+  add_1_root_add_220_2/U125/Y (OR2XL)                     0.19       3.21 r
+  add_1_root_add_220_2/U198/Y (AOI21X1)                   0.11       3.31 f
+  add_1_root_add_220_2/U127/Y (OAI21XL)                   0.20       3.51 r
+  add_1_root_add_220_2/U140/Y (AOI21X1)                   0.09       3.61 f
+  add_1_root_add_220_2/U175/Y (OAI21XL)                   0.22       3.82 r
+  add_1_root_add_220_2/U162/Y (AOI21XL)                   0.15       3.98 f
+  add_1_root_add_220_2/U126/Y (INVX1)                     0.09       4.07 r
+  add_1_root_add_220_2/U128/Y (NAND2X1)                   0.06       4.12 f
+  add_1_root_add_220_2/U129/Y (NAND2X1)                   0.09       4.21 r
+  add_1_root_add_220_2/U138/Y (AOI21X1)                   0.09       4.30 f
+  add_1_root_add_220_2/U201/Y (OAI21XL)                   0.23       4.53 r
+  add_1_root_add_220_2/U156/Y (XNOR2XL)                   0.22       4.76 f
+  add_1_root_add_220_2/SUM[14] (datapath_DW01_add_5)      0.00       4.76 f
+  U1057/Y (AOI21X1)                                       0.14       4.90 r
+  U1055/Y (NAND3X1)                                       0.11       5.01 f
+  U900/Y (AOI21XL)                                        0.86       5.87 r
+  U1807/Y (OAI22XL)                                       0.17       6.04 f
+  R_reg[0][14]/D (DFFRX1)                                 0.00       6.04 f
+  data arrival time                                                  6.04
+
+  clock CLK_0 (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  R_reg[0][14]/CK (DFFRX1)                                0.00      10.00 r
+  library setup time                                     -0.24       9.76
+  data required time                                                 9.76
+  --------------------------------------------------------------------------
+  data required time                                                 9.76
+  data arrival time                                                 -6.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.71
+
+
+  Startpoint: control[15]
+              (input port)
+  Endpoint: V (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  control[15] (in)                                        0.00       0.00 f
+  U749/Y (BUFX4)                                          0.09       0.09 f
+  U1331/Y (CLKBUFX3)                                      0.22       0.31 f
+  U707/Y (MXI4XL)                                         0.24       0.55 f
+  U682/Y (MXI4X1)                                         0.38       0.93 r
+  U651/Y (MXI2X2)                                         0.13       1.07 f
+  U1327/Y (CLKINVX1)                                      0.14       1.21 r
+  srl_143/A[9] (datapath_DW_rightsh_1)                    0.00       1.21 r
+  srl_143/U177/Y (CLKMX2X2)                               0.19       1.40 r
+  srl_143/U176/Y (MXI2X1)                                 0.08       1.48 f
+  srl_143/U129/Y (MX2XL)                                  0.28       1.76 f
+  srl_143/U175/Y (MX3XL)                                  0.29       2.05 f
+  srl_143/U164/Y (NOR2X1)                                 0.11       2.16 r
+  srl_143/B[1] (datapath_DW_rightsh_1)                    0.00       2.16 r
+  U779/Y (NAND2X1)                                        0.06       2.22 f
+  U653/Y (NAND2X1)                                        0.15       2.37 r
+  add_179/B[1] (datapath_DW01_add_7)                      0.00       2.37 r
+  add_179/U167/Y (NOR2XL)                                 0.09       2.46 f
+  add_179/U133/Y (OAI21XL)                                0.22       2.69 r
+  add_179/U137/Y (AOI21XL)                                0.14       2.83 f
+  add_179/U130/Y (OAI21XL)                                0.24       3.07 r
+  add_179/U129/Y (AOI21XL)                                0.16       3.23 f
+  add_179/U178/Y (OAI21XL)                                0.27       3.50 r
+  add_179/U139/Y (AOI21X1)                                0.17       3.68 f
+  add_179/U138/Y (OAI21X2)                                0.15       3.82 r
+  add_179/U143/Y (AOI21X1)                                0.10       3.93 f
+  add_179/U131/Y (OAI21XL)                                0.24       4.16 r
+  add_179/U203/Y (XNOR2X1)                                0.16       4.32 r
+  add_179/SUM[15] (datapath_DW01_add_7)                   0.00       4.32 r
+  U798/Y (INVX1)                                          0.06       4.38 f
+  U2024/Y (AOI2BB2X2)                                     0.19       4.58 f
+  U691/Y (NAND3XL)                                        0.15       4.73 r
+  U684/Y (XNOR2XL)                                        0.19       4.92 f
+  U2026/Y (NOR2X1)                                        0.08       5.00 r
+  V (out)                                                 0.00       5.00 r
+  data arrival time                                                  5.00
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -5.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+

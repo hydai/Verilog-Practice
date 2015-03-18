@@ -1,0 +1,25 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : area
+Design : fifo_ctr
+Version: D-2010.03-SP5
+Date   : Sun Jun  1 23:34:34 2014
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:               17
+Number of nets:               102
+Number of cells:               79
+Number of references:          18
+
+Combinational area:        639.919791
+Noncombinational area:     387.007187
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          1026.926978
+Total area:                 undefined

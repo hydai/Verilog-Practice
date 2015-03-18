@@ -1,0 +1,19 @@
+// GCD (greatest common divisor) Program
+//      Addresses #1024, #1025 are the two integer parameters
+//      GCD result is in #1026
+//      Registers:
+//        R2: the first integer of GCD
+//        R3: the second integer of GCD
+//        R1: temporal variable for checking branch condition
+//        R16: storing the constant #1024
+//        R17: storing the constant #1025
+//        R18: storing the constant #1026
+
+
+// Data Segment starts at 1024 = 0x400h
+@400
+00000000_00000000_00000000_00011011   //  27
+00000000_00000000_00000000_00001100   //  12
+
+0000000_00000_00000__000000000000000  //
+0000000_00000_00000__000000000000000  //

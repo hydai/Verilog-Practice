@@ -1,0 +1,9 @@
+module example (a, b, out) {
+    always @ (posedge clk or negedge rst_n) {
+        if (!rst_n) {
+            out = 0;
+        } else {
+            out = (a&b) ^ (a|b);
+        }
+    }
+}

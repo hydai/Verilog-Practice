@@ -1,0 +1,236 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : SingleCycleProcessor
+Version: D-2010.03-SP5
+Date   : Mon Jun 23 03:51:01 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: R_reg[13][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_reg[1][30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_reg[13][1]/CK (DFFRX1)                                0.00 #     0.00 r
+  R_reg[13][1]/Q (DFFRX1)                                 0.51       0.51 f
+  U3098/Y (MXI4X1)                                        0.38       0.89 r
+  U2276/Y (MX4X1)                                         0.24       1.13 r
+  U1759/Y (MX2X2)                                         0.17       1.30 r
+  U1747/Y (INVX4)                                         0.07       1.36 f
+  add_1_root_add_157_2/A[1] (SingleCycleProcessor_DW01_add_0)
+                                                          0.00       1.36 f
+  add_1_root_add_157_2/U1_1/CO (ADDFXL)                   0.54       1.91 f
+  add_1_root_add_157_2/U1_2/CO (ADDFXL)                   0.38       2.28 f
+  add_1_root_add_157_2/U1_3/CO (ADDFXL)                   0.38       2.66 f
+  add_1_root_add_157_2/U1_4/CO (ADDFXL)                   0.38       3.04 f
+  add_1_root_add_157_2/U1_5/CO (ADDFXL)                   0.37       3.40 f
+  add_1_root_add_157_2/U1_6/CO (ADDFHX1)                  0.26       3.66 f
+  add_1_root_add_157_2/U1_7/CO (ADDFX2)                   0.30       3.96 f
+  add_1_root_add_157_2/U1_8/CO (ADDFHX2)                  0.20       4.16 f
+  add_1_root_add_157_2/U1_9/CO (ADDFHX2)                  0.19       4.35 f
+  add_1_root_add_157_2/U1_10/CO (ADDFHX2)                 0.20       4.55 f
+  add_1_root_add_157_2/U1_11/CO (ADDFHX4)                 0.17       4.73 f
+  add_1_root_add_157_2/U1_12/CO (ADDFHX2)                 0.18       4.90 f
+  add_1_root_add_157_2/U1_13/CO (ADDFXL)                  0.37       5.27 f
+  add_1_root_add_157_2/U1_14/CO (ADDFHX2)                 0.21       5.48 f
+  add_1_root_add_157_2/U20/Y (OR2X1)                      0.24       5.72 f
+  add_1_root_add_157_2/U21/Y (OR2X1)                      0.26       5.98 f
+  add_1_root_add_157_2/U6/Y (OR2X4)                       0.16       6.14 f
+  add_1_root_add_157_2/U22/Y (OR2X1)                      0.26       6.40 f
+  add_1_root_add_157_2/U7/Y (OR2X4)                       0.16       6.56 f
+  add_1_root_add_157_2/U23/Y (OR2X1)                      0.25       6.81 f
+  add_1_root_add_157_2/U1/Y (OR2X2)                       0.21       7.02 f
+  add_1_root_add_157_2/U25/Y (OR2X1)                      0.26       7.28 f
+  add_1_root_add_157_2/U4/Y (OR2X4)                       0.16       7.44 f
+  add_1_root_add_157_2/U26/Y (OR2X1)                      0.26       7.70 f
+  add_1_root_add_157_2/U3/Y (OR2X4)                       0.16       7.86 f
+  add_1_root_add_157_2/U27/Y (OR2X1)                      0.24       8.10 f
+  add_1_root_add_157_2/U28/Y (OR2X1)                      0.26       8.37 f
+  add_1_root_add_157_2/U5/Y (OR2X4)                       0.16       8.53 f
+  add_1_root_add_157_2/U24/Y (OR2X1)                      0.25       8.77 f
+  add_1_root_add_157_2/U2/Y (XNOR2XL)                     0.22       8.99 r
+  add_1_root_add_157_2/SUM[30] (SingleCycleProcessor_DW01_add_0)
+                                                          0.00       8.99 r
+  U1738/Y (AOI222X1)                                      0.20       9.19 f
+  U1737/Y (AND4X4)                                        0.21       9.40 f
+  U2287/Y (CLKBUFX3)                                      0.20       9.60 f
+  U3016/Y (OAI22XL)                                       0.13       9.72 r
+  R_reg[1][30]/D (DFFRX1)                                 0.00       9.72 r
+  data arrival time                                                  9.72
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  R_reg[1][30]/CK (DFFRX1)                                0.00      10.00 r
+  library setup time                                     -0.27       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -9.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: instruction[15]
+              (input port)
+  Endpoint: address[8] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  instruction[15] (in)                     0.00       0.00 r
+  U3530/Y (CLKBUFX3)                       0.11       0.11 r
+  U2433/Y (CLKBUFX3)                       0.13       0.24 r
+  U2112/Y (BUFX4)                          0.61       0.85 r
+  U3516/Y (MXI4X1)                         0.64       1.49 f
+  U1706/Y (MX4X1)                          0.28       1.77 f
+  U1705/Y (MXI2X1)                         0.63       2.40 r
+  U2143/Y (CLKINVX1)                       0.26       2.66 f
+  U2042/Y (NOR2X1)                         0.10       2.76 r
+  address[8] (out)                         0.00       2.76 r
+  data arrival time                                   2.76
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -2.76
+  -----------------------------------------------------------
+  slack (MET)                                         2.24
+
+
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : SingleCycleProcessor
+Version: D-2010.03-SP5
+Date   : Mon Jun 23 04:01:41 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: R_reg[13][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_reg[1][30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_reg[13][1]/CK (DFFRX1)                                0.00 #     0.00 r
+  R_reg[13][1]/Q (DFFRX1)                                 0.51       0.51 f
+  U3098/Y (MXI4X1)                                        0.38       0.89 r
+  U2276/Y (MX4X1)                                         0.24       1.13 r
+  U1759/Y (MX2X2)                                         0.17       1.30 r
+  U1747/Y (INVX4)                                         0.07       1.36 f
+  add_1_root_add_157_2/A[1] (SingleCycleProcessor_DW01_add_0)
+                                                          0.00       1.36 f
+  add_1_root_add_157_2/U1_1/CO (ADDFXL)                   0.54       1.91 f
+  add_1_root_add_157_2/U1_2/CO (ADDFXL)                   0.38       2.28 f
+  add_1_root_add_157_2/U1_3/CO (ADDFXL)                   0.38       2.66 f
+  add_1_root_add_157_2/U1_4/CO (ADDFXL)                   0.38       3.04 f
+  add_1_root_add_157_2/U1_5/CO (ADDFXL)                   0.37       3.40 f
+  add_1_root_add_157_2/U1_6/CO (ADDFHX1)                  0.26       3.66 f
+  add_1_root_add_157_2/U1_7/CO (ADDFX2)                   0.30       3.96 f
+  add_1_root_add_157_2/U1_8/CO (ADDFHX2)                  0.20       4.16 f
+  add_1_root_add_157_2/U1_9/CO (ADDFHX2)                  0.19       4.35 f
+  add_1_root_add_157_2/U1_10/CO (ADDFHX2)                 0.20       4.55 f
+  add_1_root_add_157_2/U1_11/CO (ADDFHX4)                 0.17       4.73 f
+  add_1_root_add_157_2/U1_12/CO (ADDFHX2)                 0.18       4.90 f
+  add_1_root_add_157_2/U1_13/CO (ADDFXL)                  0.37       5.27 f
+  add_1_root_add_157_2/U1_14/CO (ADDFHX2)                 0.21       5.48 f
+  add_1_root_add_157_2/U20/Y (OR2X1)                      0.24       5.72 f
+  add_1_root_add_157_2/U21/Y (OR2X1)                      0.26       5.98 f
+  add_1_root_add_157_2/U6/Y (OR2X4)                       0.16       6.14 f
+  add_1_root_add_157_2/U22/Y (OR2X1)                      0.26       6.40 f
+  add_1_root_add_157_2/U7/Y (OR2X4)                       0.16       6.56 f
+  add_1_root_add_157_2/U23/Y (OR2X1)                      0.25       6.81 f
+  add_1_root_add_157_2/U1/Y (OR2X2)                       0.21       7.02 f
+  add_1_root_add_157_2/U25/Y (OR2X1)                      0.26       7.28 f
+  add_1_root_add_157_2/U4/Y (OR2X4)                       0.16       7.44 f
+  add_1_root_add_157_2/U26/Y (OR2X1)                      0.26       7.70 f
+  add_1_root_add_157_2/U3/Y (OR2X4)                       0.16       7.86 f
+  add_1_root_add_157_2/U27/Y (OR2X1)                      0.24       8.10 f
+  add_1_root_add_157_2/U28/Y (OR2X1)                      0.26       8.37 f
+  add_1_root_add_157_2/U5/Y (OR2X4)                       0.16       8.53 f
+  add_1_root_add_157_2/U24/Y (OR2X1)                      0.25       8.77 f
+  add_1_root_add_157_2/U2/Y (XNOR2XL)                     0.22       8.99 r
+  add_1_root_add_157_2/SUM[30] (SingleCycleProcessor_DW01_add_0)
+                                                          0.00       8.99 r
+  U1738/Y (AOI222X1)                                      0.20       9.19 f
+  U1737/Y (AND4X4)                                        0.21       9.40 f
+  U2287/Y (CLKBUFX3)                                      0.20       9.60 f
+  U3016/Y (OAI22XL)                                       0.13       9.72 r
+  R_reg[1][30]/D (DFFRX1)                                 0.00       9.72 r
+  data arrival time                                                  9.72
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  R_reg[1][30]/CK (DFFRX1)                                0.00      10.00 r
+  library setup time                                     -0.27       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -9.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: instruction[15]
+              (input port)
+  Endpoint: address[8] (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  instruction[15] (in)                     0.00       0.00 r
+  U3530/Y (CLKBUFX3)                       0.11       0.11 r
+  U2433/Y (CLKBUFX3)                       0.13       0.24 r
+  U2112/Y (BUFX4)                          0.61       0.85 r
+  U3516/Y (MXI4X1)                         0.64       1.49 f
+  U1706/Y (MX4X1)                          0.28       1.77 f
+  U1705/Y (MXI2X1)                         0.63       2.40 r
+  U2143/Y (CLKINVX1)                       0.26       2.66 f
+  U2042/Y (NOR2X1)                         0.10       2.76 r
+  address[8] (out)                         0.00       2.76 r
+  data arrival time                                   2.76
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -2.76
+  -----------------------------------------------------------
+  slack (MET)                                         2.24
+
+

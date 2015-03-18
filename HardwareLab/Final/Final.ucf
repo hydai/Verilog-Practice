@@ -1,0 +1,13 @@
+NET "clk" LOC = R10;
+NET "reset_n" LOC = N3;
+NET "inf1" LOC = E18;
+NET "inf2" LOC = F17;
+NET "md1" LOC = C4;
+NET "md2" LOC = D6;
+NET "md3" LOC = A3;
+NET "md4" LOC = C5;
+
+#NET "md1" LOC = K4;
+#NET "md2" LOC = K3;
+#NET "md3" LOC = L5;
+#NET "md4" LOC = K5;

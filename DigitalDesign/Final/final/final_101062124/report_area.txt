@@ -1,0 +1,54 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'SingleCycleProcessor' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : area
+Design : SingleCycleProcessor
+Version: D-2010.03-SP5
+Date   : Mon Jun 23 03:50:28 2014
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'SingleCycleProcessor' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:              164
+Number of nets:              5515
+Number of cells:             4077
+Number of references:          69
+
+Combinational area:       52969.064010
+Noncombinational area:    34056.632446
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          87025.696457
+Total area:                 undefined
+Information: Updating graph... (UID-83)
+Warning: Design 'SingleCycleProcessor' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : area
+Design : SingleCycleProcessor
+Version: D-2010.03-SP5
+Date   : Mon Jun 23 04:01:06 2014
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'SingleCycleProcessor' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:              164
+Number of nets:              5515
+Number of cells:             4077
+Number of references:          69
+
+Combinational area:       52969.064010
+Noncombinational area:    34056.632446
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          87025.696457
+Total area:                 undefined

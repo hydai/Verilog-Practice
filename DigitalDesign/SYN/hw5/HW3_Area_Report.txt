@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : area
+Design : datapath
+Version: D-2010.03-SP5
+Date   : Mon Jun  2 01:42:00 2014
+****************************************
+
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:              352
+Number of nets:              2118
+Number of cells:             1684
+Number of references:          68
+
+Combinational area:       20443.485337
+Noncombinational area:    8256.153320
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          28699.638657
+Total area:                 undefined

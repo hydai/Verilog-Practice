@@ -1,0 +1,39 @@
+Loading db file '/theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : fifo_ctr
+Version: D-2010.03-SP5
+Date   : Sun Jun  1 23:37:08 2014
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  26.4479 uW   (96%)
+  Net Switching Power  =   1.0694 uW    (4%)
+                         ---------
+Total Dynamic Power    =  27.5173 uW  (100%)
+
+Cell Leakage Power     = 903.9666 nW
+

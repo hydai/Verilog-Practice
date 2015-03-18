@@ -1,0 +1,50 @@
+init:       ADD  R16, R0, R0
+            ADI  R9, R0, #512
+            ADI  R17, R0, #1024
+            ADI  R18, R0, #1
+;; Load 512~516 to R1~R5
+            LD   R1, M[R9]
+            ADD  R9, R9, R18
+            LD   R2, M[R9]
+            ADD  R9, R9, R18
+            LD   R3, M[R9]
+            ADD  R9, R9, R18
+            LD   R4, M[R9]
+            ADD  R9, R9, R18
+            LD   R5, M[R9]
+;; Let R6 be 512 
+            ADD  R6, R0, R0
+            ADI  R9, R0, #512
+loop:       ADD  R6, R6, R18
+            SUB  R8, R9, R6
+            BNZ  R8, loop (-2)
+;; Load word from 512 to 535 
+            ADD  R10, R9, R0
+            ADI  R11, R0, #535
+loop:       LD  R12, M[R10]
+;; Add R1~R5 to it
+            ADD  R12, R12, R1
+            ADD  R12, R12, R2
+            ADD  R12, R12, R3
+            ADD  R12, R12, R4
+            ADD  R12, R12, R5
+;; Save it to from 1024~1047
+            ST   M[R17], R12
+            ADD  R17, R17, R18
+;; Increment loop counter
+            ADI  R10, R10, #1
+            SUB  R13, R11, R10
+            BNZ  R13, loop2 (-10)
+
+
+NOP
+NOP
+NOP
+NOP
+NOP
+HALT
+HALT
+HALT
+HALT
+HALT
+

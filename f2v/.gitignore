@@ -1,0 +1,6 @@
+# binary file
+f2v
+*.out
+
+# compiling file
+*.o
